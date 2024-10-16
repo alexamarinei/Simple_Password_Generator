@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #1C1C1C;
+    font-family: "Karla", sans-serif;
+}
+
+
+.container { 
+    background-color: #1F2937;
+    padding: 50px 10%; 
+    max-width: 750px;
+    margin: 30px auto;
+    border-radius: 8px;
+}
+
+#title {
+    color: white;
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#title-color {
+    color: #4ADF86;
+}
+
+#sub-title {
+    color: #D5D4D8;
+    font-size: 1.25rem;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.generate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 20px;
+}
+
+#generate-btn {
+    color: #fff;
+    background-color: #10B981;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    width:100%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto;
+}
+
+#generate-btn:hover {
+    background-color: #0A9068;
+}
+
+hr { 
+    border: 1px solid #2F3E53;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+input[type=text] { 
+    text-align: center;
+    border-radius: 5px;
+    background-color: #273549;
+    color: #55F991;
+    padding: 10px;
+    border: none;
+    width: 100%; 
+    max-width: 400px; 
+    font-size: 1rem;
+    outline: none; 
+    transition: background-color 0.2s ease;
+}
+
+input[type=text]:hover,
+input[type=text]:focus {
+    background-color: #334155; 
+}
+
+#copy-btn-1,
+#copy-btn-2 {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    transition: background-color 0.3s ease;
+}
+
+#copy-btn-1:hover,
+#copy-btn-2:hover {
+    background-color: #334155;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 30px 5%;
+        max-width: 100%;
+    }
+
+    #generate-btn {
+        width: 100%;
+        max-width: 400px;
+        padding: 12px;
+    }
+
+    .input-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type=text] {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #copy-btn-1,
+    #copy-btn-2 {
+        margin-top: 10px; 
+    }
+}
